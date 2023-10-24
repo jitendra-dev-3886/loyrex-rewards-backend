@@ -1,0 +1,33 @@
+.order-detail {
+    .address-shipped-block {
+        table {
+            td {
+                font-size: 1.175rem;
+                h6 { margin-bottom: 15px; }
+                .text {
+                    font-size: 1.175rem;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                }
+            }
+         }
+    }
+    .payment-detail-block {
+        font-size: 1.175rem;
+        h6 { margin-bottom: 15px; }
+        .text {
+            font-size: 1.175rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+    }
+}
+
+.order-listing {
+    table {
+        tr {
+            td:first-child { display: none; }
+            th:first-child { display: none; }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+# Initial Setup/Requirements
+
+  - Take any env name database as loyrex_db
+  - Minimum requirement php version is 7.4
+
+# Run below command to Package module installation :
+
+ - composer install
+
+ - npm install
+
+ - npm run dev
+
+ - php artisan migrate
+
+ - php artisan passport:install
+
+ - php artisan storage:link
+
+# Run below command to start Laravel development server
+
+ - php artisan serve
+
+# Run below command for latest UI changes
+
+ - npm run watch
+
+
+
+

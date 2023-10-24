@@ -1,0 +1,45 @@
+id: 42766
+name: loyrex-rewards-backend
+environments:
+    production:
+        memory: 1024
+        timeout: 30
+        cli-memory: 512
+        runtime: 'php-8.1:al2'
+        domain: thetechreward.com
+        database: loyrex-database
+        storage: loyrexsolutions.com
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'npm install'
+            - 'php artisan config:clear'
+            - 'npx browserslist@latest --update-db'
+            - 'npm run production'
+            - 'rm -rf node_modules'
+            - 'php artisan route:cache'
+            - 'php artisan event:cache'
+            - 'php artisan view:cache'
+        deploy:
+            - 'php artisan migrate --force'
+            - 'php artisan queue:restart'
+    uat:
+        memory: 1024
+        timeout: 30
+        cli-memory: 512
+        runtime: 'php-8.1:al2'
+        domain: 
+        database: 
+        storage: 
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'npm install'
+            - 'php artisan config:clear'
+            - 'npx browserslist@latest --update-db'
+            - 'npm run production'
+            - 'rm -rf node_modules'
+            - 'php artisan route:cache'
+            - 'php artisan event:cache'
+            - 'php artisan view:cache'
+        deploy:
+            - 'php artisan migrate --force'
+            - 'php artisan queue:restart'

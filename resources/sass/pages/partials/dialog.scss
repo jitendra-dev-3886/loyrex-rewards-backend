@@ -1,0 +1,16 @@
+.v-dialog {
+    .v-card__title {
+        background: #1e1e2d;
+        color: #fff;
+        font-size: 15px !important;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    /*.headline {
+        font-size: 15px !important;
+    }*/
+}
+
+.v-dialog>.v-card>.v-card__title {  font-size: 15px !important; }
+
+

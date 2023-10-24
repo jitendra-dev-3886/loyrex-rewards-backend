@@ -1,0 +1,86 @@
+.brand-logo img{
+    height:50px;
+}
+#kt_header_mobile {
+    img{
+        height: 40px !important;
+    }
+}
+.v-text-field.v-text-field--enclosed {
+    .v-text-field__details {
+        padding-left: 0px !important;
+    }
+}
+.v-input--selection-controls .v-input__slot>.v-label, .v-input--selection-controls .v-radio>.v-label { margin-bottom: 0 !important; }
+.theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th { color: $black_color !important; }
+.v-data-table table tbody tr td.text-start:last-child { width: 11% }
+.v-text-field .v-label, .v-text-field input, .v-input, .v-input .v-label, .v-select__selections,.v-file-input .v-file-input__text, .v-textarea textarea {
+    font-size: 13px;
+}
+.w70 { width: 70% !important;  max-width: 70% !important; }
+.w100 { width: 100% !important;  max-width: 100% !important; }
+.v-tab, .btn  { text-transform: capitalize !important; }
+.v-tab { font-size: 1.1rem !important; }
+.v-data-table>.v-data-table__wrapper>table>thead>tr>th {
+    font-size: 14px !important;
+    @media(min-width: 1600px) {
+        font-size: 15px !important;
+    }
+}
+
+.v-data-table>.v-data-table__wrapper>table>tbody>tr>td {
+    font-size: 13px !important;
+    @media(min-width: 1600px) {
+        font-size: 14px !important;
+    }
+}
+.v-data-footer {
+    font-size: 14px !important;
+    @media(min-width: 1600px) {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 1264px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+.decimal-list {
+    list-style-type: decimal;
+}
+
+.no-list-style {
+    list-style-type: none;
+    padding-left: 0!important;
+}
+
+.v-tooltip__content {
+    font-size: 11px !important;
+    line-height: 18px !important;
+    padding: 4px 7px !important;
+}
+
+@media (max-width: 992px) {
+    .mobile-title {
+        border-bottom: 1px solid #EBEDF3 !important;
+    }
+}
+
+
+.dropzone .dz-preview .dz-error-message {
+    top: 10px !important;
+}
+.dropzone .dz-preview.dz-image-preview {
+    z-index: 0 !important;
+}
+
+.dropzone .dz-preview .dz-image {
+    z-index: 0 !important;
+}
+
+.dropzone .dz-preview {
+    min-height: 150px !important;
+    min-width: 150px !important;
+}

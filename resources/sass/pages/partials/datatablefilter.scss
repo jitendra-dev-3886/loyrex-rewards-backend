@@ -1,0 +1,9 @@
+.filter-close-btn {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+}
+
+.v-btn:not(.v-btn--round).v-size--default {
+    min-width: auto !important;
+}
